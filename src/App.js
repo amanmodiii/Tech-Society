@@ -6,7 +6,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Events from "./pages/events/Events";
-import Faq from "./pages/faq/Faq"
+import FaqPage from "./pages/faq/FaqPage"
 import GalleryPage from "./pages/gallery/GalleryPage"
 import Team from "./pages/team/Team"
 import { InfinitySpin } from "react-loader-spinner";
@@ -39,7 +39,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/events" element={<Events />} />
-              <Route path="/faq" element={<Faq />} />
+              <Route path="/faq" element={<FaqPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/team" element={<Team />} />
               <Route path="*" element={<Navigate to="/" />} />

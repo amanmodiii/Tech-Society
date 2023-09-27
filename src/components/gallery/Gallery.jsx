@@ -1,5 +1,5 @@
 import React from 'react';
-
+import HeroSec from './landing'
 function Gallery({ images }) {
   const renderedImages = images.map((image) => {
     return (
@@ -10,8 +10,11 @@ function Gallery({ images }) {
   });
 
   return (
-    <div className="grid max-w-[1200px] px-16 my-16 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div> 
+      <HeroSec/>
+    <div className="grid max-w-[1200px] px-16 my-24 mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {renderedImages}
+    </div>
     </div>
   );
 }
